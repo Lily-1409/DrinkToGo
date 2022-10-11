@@ -1,0 +1,265 @@
+// разделительные полосы
+.social-link,
+.shop-link,
+.contacts,
+.media-link,
+.developer-information-link {
+    position: relative;
+}
+
+.social-link::before,
+.shop-link::before,
+.contacts::before,
+.media-link::before,
+.developer-information-link::before {
+    content: "";
+    border-bottom: 1px solid #f0ebff;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
+
+.footer {
+    
+    @media (min-width: $tablet-width) {
+        margin-bottom: 28px;
+    }
+}
+
+.footer-wrapper {
+    
+    @media (min-width: $desktop-width) {
+        display: flex;
+        padding: 40px 40px 0 40px;
+        justify-content: space-between;
+    }
+}
+
+// блок с социальными сетями
+.social-link .container {
+    
+    @media (min-width: $desktop-width) {
+        padding: 0;
+    } 
+}
+
+.social-link-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 0;
+
+    @media (min-width: $tablet-width) {
+        padding: 42px 0 32px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        align-items: flex-start;
+        min-width: 320px;
+        padding: 0;
+    } 
+}
+
+.footer-logo {
+    text-decoration: none;
+    color: #333333;
+}
+
+.footer-logo__image {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-logo-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
+        display: block;
+    } 
+}
+
+.social-networks-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-networks-link svg{
+    fill: #bdbdbd;
+}
+
+.social-networks-link:hover svg,
+.social-networks-link:active svg {
+    fill: #7859cf;
+}
+
+.social-networks-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+// стилизация блоков с ссылками на ресурсы и контакты
+.information .container {
+    
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
+}
+
+.information {
+    
+    @media (min-width: $tablet-width) {
+        display: flex;
+        padding: 0 20px;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        padding: 0;
+        margin-bottom: 16px;
+    }
+    
+}
+
+.information article:first-child {
+    
+    @media (min-width: $tablet-width) {
+        margin-right: 108px;
+        min-width: 150px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-right: 200px;
+    }
+}
+
+.information article:nth-child(2) {
+    
+    @media (min-width: $tablet-width) {
+        margin-right: 72px;
+        min-width: 180px;
+    }
+    
+    @media (min-width: $desktop-width) {
+        margin-right: 170px;
+    }
+}
+
+.information article {
+    padding: 20px 0;
+    
+    @media (min-width: $tablet-width) {
+        padding: 0;
+    }
+}
+
+.information-title {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7859cf;
+}
+
+.information-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.information-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.information-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.information-item:hover,
+.information-item:focus {
+    .information-link {
+        color: #9070ec;
+    }
+}
+
+.information-item:active{
+    .information-link {
+        color: #593cac;
+    }
+}
+
+.information-contacts-item {
+    display: flex;
+}
+
+.information-contacts-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.information-contacts-link {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #333333;
+    margin-left: 6px;
+}
+
+// стилизация ссылки на сайт разработчика ресурса
+
+.developer-information-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.developer-information-desc {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #bdbdbd;
+    margin-right: 4px;
+}
+
+.developer-information-link svg {
+    fill: #bdbdbd;
+}
+
+.developer-information-link:hover .developer-information-desc,
+.developer-information-link:focus .developer-information-desc {
+    color: #7859cf;
+}
+
+.developer-information-link:hover svg,
+.developer-information-link:focus svg {
+    fill: #7859cf;
+}
+
+.developer-information-link:active .developer-information-desc {
+    color: #593cac;
+}
+
+.developer-information-link:active svg {
+    fill: #593cac;
+}

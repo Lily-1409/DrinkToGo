@@ -1,0 +1,224 @@
+.catalog {
+    background-color: #f8f8f8;
+    padding-top: 50px;
+
+    @media (min-width: $tablet-width) {
+        padding-top: 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+        padding-top: 100px;
+    }
+}
+
+.catalog-wrapper {
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+    }
+}
+
+.catalog-section-name {
+    display: block;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #7859cf;
+    text-align: center;
+}
+
+.filter-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+        font-size: 42px;
+        line-height: 64px;
+    }
+}
+
+.catalog-filters {
+    margin-bottom: 40px;
+
+    @media (min-width: $desktop-width) {
+        margin-right: 30px;
+    }
+}
+
+.filter-block {
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.catalog-filter-group {
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
+}
+
+.catalog-filter-group:first-child {
+    margin-right: 20px;
+}
+
+.catalog-filter-group:nth-child(2) {
+    margin-right: 40px;
+}
+
+.catalog-filter-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 22px;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+}
+
+.control-mark {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #bdbdbd; 
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.control-mark::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #7859cf;
+    border-radius: 50%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.control-input:checked + .control-mark {
+    border-color: #7859cf;
+}
+
+.control-input:checked + .control-mark::after {
+    display: block;
+}
+
+.control-mark-checkbox {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    background-color: #bdbdbd;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+
+.control-mark-checkbox::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute; 
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: left .2s ease;
+}
+
+.control-input:checked + .control-mark-checkbox {
+    background-color: #7859cf;
+}
+
+.control-input:checked + .control-mark-checkbox::after {
+    left: 20px;
+}
+
+.filter-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+}
+
+.filter-button-use {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 160px;
+    margin-bottom: 24px;
+    padding: 10px 0;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-right: 18px;
+        width: 150px;
+    }
+}
+
+.filter-button-reset {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 24px;
+    width: 160px;
+    padding: 10px 0;
+    color: #7859cf;
+    background-color: #ffffff;
+
+    @media (min-width: $desktop-width) {
+        width: 150px;
+    }
+}
+
+.filter-button-reset:disabled{
+    background-color: #e2e2e2;
+  }

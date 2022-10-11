@@ -1,0 +1,231 @@
+.sorting-products {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 18px;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        justify-content: end;
+        margin-bottom: 30px;
+    }
+}
+
+.select-item {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #7859cf;
+    background-color: transparent;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: §px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 70px;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 60px;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+.product-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+    padding: 40px 20px 20px;
+
+    @media (min-width: $tablet-width) {
+        min-height: 440px;
+    }
+
+    @media (min-width: $desktop-width) {
+        min-height: 460px;
+    }
+}
+
+.product-card-link {
+    text-decoration: none;
+}
+
+.product-card-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.product-card-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+.product-card-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 16px;
+}
+
+.product-card-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-card-more-price {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.product-card-button {
+    width: 141px;
+}
+
+.product-card-button-name {
+    margin-left: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+
+    @media (min-width: $tablet-width) {
+        justify-content: flex-end;
+    }
+}
+
+.pagination-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    align-items: center;
+    margin: 0 20px 0 20px;
+
+    @media (min-width: $tablet-width) {
+        justify-content: flex-end;
+        margin: 0;
+    }
+} 
+
+.pagination-item {
+    height: 40px;
+    min-width: 40px;
+    border-radius: 4px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.pagination-item-current {
+    background-color: transparent;
+} 
+
+.pagination-item-current .pagination-link {
+    font-weight: 600;
+    color: #333333;
+}
+
+.pagination-item:first-child {
+
+    @media (min-width: $tablet-width) {
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.pagination-item:last-child {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+        border-radius: 4px 0 0 4px;
+    }
+}
+
+.pagination-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #7859cf;
+}
+
+.button-pagination-back,
+.button-pagination-forward {
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+    border-radius: 4px;
+    height: 40px;
+    min-width: 40px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        height: 40px;
+        min-width: 140px;
+    }
+}
+
+.button-pagination-back {
+
+    @media (min-width: $tablet-width) {
+        border-radius: 4px 0 0 4px;
+    }
+}
+
+.button-pagination-forward {
+
+    @media (min-width: $tablet-width) {
+        border-radius: 0 4px 4px 0;
+    }
+}
+
+.pagination-button-name {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7859cf;
+
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.pagination-button-arrow {
+
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+    
+}

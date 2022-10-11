@@ -1,0 +1,231 @@
+.header {
+  background-color: #ffffff;
+  color: #111111;
+  position: relative;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.header-logo{
+  margin-right: auto;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    order: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-logo__image {
+
+  @media (min-width: $desktop-width) {
+    margin-right: 20px;
+  }
+}
+
+.header-logo-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 130px;
+  }
+}
+
+/*стилизация user-action*/
+.user-actions {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.user-action {
+  padding: 22px;
+  
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+  }
+}
+
+.user-action-link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333333;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.user-action:hover .user-action-link{
+  color: #7859cf;
+}
+
+.user-action svg{
+  fill: #333333;
+}
+.user-action:hover svg{
+  fill: #7859cf;
+}
+
+.user-action:active {
+  background: #f0ebff;
+}
+
+.user-action:active .user-action-link{
+  color: #7859cf;
+}
+
+.user-action-link svg {
+
+  @media (min-width: $desktop-width) {
+    margin-right: 8px;
+  }
+}
+
+.user-action-login, 
+.user-action-cart {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+/*стилизация меню навигацмм*/
+.main-nav-button {
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  margin-left: 22px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-nav-button:active {
+  background-color: #f0ebff;
+}
+
+.main-nav-button .main-nav-close {
+  display: none;
+}
+
+.main-nav-button--active .main-nav-burger {
+  display: none;
+}
+
+.main-nav-button--active .main-nav-close {
+  display: block;
+}
+
+.main-nav {
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.main-nav__list--active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #f0ebff;
+}
+
+.main-nav__list--active .main-nav__item {
+  padding: 20px 0;
+  border-bottom: 1px solid #f0ebff;
+}
+
+.main-nav__list--active .main-nav__item:active {
+  background-color: #f0ebff;
+}
+
+.main-nav__item {
+
+  @media (min-width: $tablet-width) {
+    padding: 32px 20px;
+  }
+}
+
+.main-nav__item--current {
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #7859cf;
+  
+    .main-nav__link {
+      color: #7859cf;
+    }
+  }
+}
+
+.main-nav__item:hover,
+.main-nav__item:focus {
+
+  @media (min-width: $tablet-width) {
+  
+    .main-nav__link {
+      color: #7859cf;
+    }
+  }
+}
+
+.main-nav__item:active {
+
+  @media (min-width: $tablet-width) {
+    background-color: #f0ebff;;
+  
+    .main-nav__link {
+      color: #7859cf;
+    }
+  }
+}
+
+.main-nav__link {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+  text-decoration: none;
+  text-transform: uppercase;
+}

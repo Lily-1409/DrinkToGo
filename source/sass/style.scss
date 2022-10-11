@@ -1,0 +1,17 @@
+/* GLOBAL */
+@import "global/variables";
+@import "global/fonts";
+@import "global/global";
+
+/* HELPERS */
+@import "helpers/visibility.scss";
+
+/* BLOCKS */
+@import "blocks/header";
+@import "blocks/slider.scss";
+@import "blocks/section-name.scss";
+@import "blocks/advantages.scss";
+@import "blocks/range-bar.scss";
+@import "blocks/filter.scss";
+@import "blocks/catalog-products.scss";
+@import "blocks/footer.scss";
