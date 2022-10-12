@@ -58,7 +58,7 @@
 
 .user-action {
   padding: 22px;
-  
+
   @media (min-width: $tablet-width) {
     padding: 32px 20px;
   }
@@ -84,6 +84,7 @@
 .user-action svg{
   fill: #333333;
 }
+
 .user-action:hover svg{
   fill: #7859cf;
 }
@@ -103,7 +104,7 @@
   }
 }
 
-.user-action-login, 
+.user-action-login,
 .user-action-cart {
   display: none;
 
@@ -192,7 +193,7 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #7859cf;
-  
+
     .main-nav__link {
       color: #7859cf;
     }
@@ -203,7 +204,6 @@
 .main-nav__item:focus {
 
   @media (min-width: $tablet-width) {
-  
     .main-nav__link {
       color: #7859cf;
     }
@@ -214,7 +214,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: #f0ebff;;
-  
+
     .main-nav__link {
       color: #7859cf;
     }

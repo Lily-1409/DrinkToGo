@@ -1,20 +1,13 @@
-/* import Swiper, { Navigation, Pagination } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination'; */
-
-/* Swiper.use([Navigation, Pagination]); */
-
 const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,
-  
+
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
-  
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',

@@ -1,0 +1,12 @@
+.map {
+  width: 320px;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 1440px;
+  }
+}
