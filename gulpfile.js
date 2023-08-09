@@ -12,6 +12,9 @@ import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
 import browser from 'browser-sync';
 
+const ghPages = require('gh-pages');
+const path = require('path');
+
 // Styles
 
 export const styles = () => {
@@ -168,3 +171,8 @@ export default gulp.series(
     server,
     watcher
   ));
+
+  function deploy(cb) {
+    ghPages.publish(path.join(process.cwd(), './build'), cb);
+  }
+  exports.deploy = deploy;
