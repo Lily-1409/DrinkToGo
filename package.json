@@ -1,6 +1,7 @@
 {
-  "name": "HTML Academy gulp template",
+  "name": "html-academy-gulp-template",
   "private": true,
+  "homepage": "https://lily-1409.github.io/DrinkToGo",
   "version": "1.0.0",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
@@ -24,6 +25,7 @@
     "stylelint-config-htmlacademy": "^1.1.2"
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --custom-syntax postcss-scss",
     "lint": "npm run editorconfig && npm run stylelint",
